@@ -1,0 +1,16 @@
+
+public class Sprite extends Texture2D{
+	private Texture2D texture2D;
+	
+	private Sprite() {
+	}
+	
+	private Sprite(Texture2D texture2D) {
+		this.texture2D = texture2D;
+	}
+	
+	public static Sprite emptySprite() {
+		return new Sprite();
+	}
+
+}

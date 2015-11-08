@@ -1,0 +1,42 @@
+import java.util.HashMap;
+import java.util.Map;
+
+import CustomExceptions.InvalidTagException;
+
+public class GameObject {
+    private Sprite sprite;
+    private Transform transform;
+    
+    private byte layer;
+    private String tag;
+    
+    private static class GameObjectPool {
+         private static Map <String,GameObject> pool;
+         static {
+        	 pool = new HashMap<>();
+         }
+         public static GameObject checkPool(String tag) {
+        	 return pool.get(tag);
+         }
+    }
+    
+    private GameObject(Sprite sprite,
+    		           Vector2d position,
+    		           String tag) {
+    	
+    }
+    
+    public static instantiate(Sprite sprite, 
+    		                  Vector2D position,
+                              String tag) {
+    	return new GameObject(sprite, position, tag);
+    }
+    
+    public static GameObject getGameObjectByTag(String tag) {
+    	GameObject gameObject = GameObjectPool.checkPool(tag);
+    	if(gameObject == null) {
+    		throw new InvalidTagException();
+    	}
+    	return gameObject;
+    }
+}

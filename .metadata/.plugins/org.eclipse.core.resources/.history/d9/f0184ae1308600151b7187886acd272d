@@ -1,0 +1,5 @@
+import java.awt.image.BufferedImage;
+
+public class Texture2D {
+    private BufferedImage image;
+}

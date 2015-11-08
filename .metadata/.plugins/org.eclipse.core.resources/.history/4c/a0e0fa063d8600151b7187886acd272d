@@ -1,0 +1,4 @@
+
+public class Sprite extends Texture2D{
+
+}

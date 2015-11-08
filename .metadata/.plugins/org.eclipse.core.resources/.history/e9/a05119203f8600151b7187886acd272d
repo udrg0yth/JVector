@@ -1,0 +1,5 @@
+package Animation;
+
+public class StateMachine {
+      private Map<String> stateMachine;
+}

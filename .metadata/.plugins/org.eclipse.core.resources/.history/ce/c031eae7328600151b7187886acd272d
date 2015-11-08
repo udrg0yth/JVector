@@ -1,0 +1,32 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class GameObject {
+    private Sprite sprite;
+    private Transform transform;
+    
+    private byte layer;
+    private String tag;
+    
+    private static class GameObjectPool {
+         private static Map <String,GameObject> pool;
+         static {
+        	 pool = new HashMap<>();
+         }
+         public static GameObject checkPool(String tag) {
+        	 return pool.get(tag);
+         }
+    }
+    
+    public static instantiate() {
+    	
+    }
+    
+    public static GameObject getGameObjectByTag(String tag) {
+    	  try {
+    		  GameObject gameObject = GameObjectPool.checkPool(tag);
+    	  } catch() {
+    		  
+    	  }
+    }
+}

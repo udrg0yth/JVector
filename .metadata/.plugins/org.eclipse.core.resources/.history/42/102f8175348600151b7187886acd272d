@@ -1,0 +1,6 @@
+package CustomExceptions;
+
+public class TagAlreadyAssigned extends RuntimeException{
+	
+
+}

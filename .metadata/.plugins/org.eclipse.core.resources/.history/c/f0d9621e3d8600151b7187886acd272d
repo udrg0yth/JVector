@@ -1,0 +1,13 @@
+
+public class Sprite extends Texture2D{
+	private Texture2D texture2D;
+	
+	public Sprite() {
+		
+	}
+	
+	public Sprite(Texture2D texture) {
+		
+	}
+
+}

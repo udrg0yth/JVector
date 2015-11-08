@@ -1,0 +1,8 @@
+
+public class GameObject {
+    private Sprite sprite;
+    private Transform transform;
+    
+    private byte layer;
+    private String tag;
+}

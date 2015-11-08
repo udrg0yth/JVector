@@ -1,0 +1,38 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class VectorFactory {
+    private static final Map<String, Vector2D> vectorInstances;
+    
+    static {
+    	vectorInstances = new HashMap<>();
+    	vectorInstances.put("0_0", new Vector2D());
+    }
+    
+    private VectorFactory() {}
+    
+	private class Vector2D {
+		private final double x;
+		private final double y;
+		
+		protected Vector2D() {
+			x = 0;
+			y = 0;
+		}
+		
+		protected Vector2D(double x, double y) {
+			this.x = x;
+			this.y = y;
+		}
+	}
+	
+	public static Vector2D zeroVector() {
+		return vectorInstances.get("0_0");
+	}
+	
+	public static Vector2D zeroVector() {
+		return new Vector2D();
+	}
+	
+	public static Vector2D 
+}

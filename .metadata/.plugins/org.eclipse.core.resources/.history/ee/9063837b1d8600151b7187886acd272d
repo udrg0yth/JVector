@@ -1,0 +1,14 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class Vector2D {
+	private double x;
+	private double y;
+	
+	public static final Vector2D zeroVector = new Vector2D(0,0);
+	public static final Vector2D upVector = new Vector2D(0,1);
+	public Vector2D(double x, double y) {
+		
+	}
+	
+}
