@@ -1,0 +1,13 @@
+package Animation;
+
+import Objects.GameObject;
+
+public class Animation {
+         private String animationTag;
+         List<Texture2D> frames;
+         
+         public void loadFrames(GameObject gameObject) {
+        	 
+         }
+	     
+}

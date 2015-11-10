@@ -1,0 +1,17 @@
+package Animation;
+
+class A{
+	private int a;
+	public void set(int a) {
+		this.a = a;
+	}
+}
+
+public class test {
+    
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

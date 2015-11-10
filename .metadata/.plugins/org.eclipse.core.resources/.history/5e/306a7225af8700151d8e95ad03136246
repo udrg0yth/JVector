@@ -1,0 +1,8 @@
+package Animation;
+
+public class AnimationState {
+   private String stateTag;
+   private byte currentFrame;
+   private Animation animation;
+   
+}

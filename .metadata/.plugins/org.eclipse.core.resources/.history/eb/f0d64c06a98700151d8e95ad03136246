@@ -1,0 +1,43 @@
+package Objects;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class Sprite extends Texture2D{
+
+    private byte currentFrame;
+	private List<Texture2D> frames;
+	
+	private Sprite() {
+	}
+	
+	private Sprite(Texture2D texture2D) {
+		this.frames = Arrays.asList(texture2D);
+	}
+	
+	private Sprite(List<Texture2D> listOfTextures) {
+		this.frames = listOfTextures;
+	}
+	
+	public static Sprite emptySprite() {
+		return new Sprite();
+	}
+	
+	public static Sprite texturedSprite(Texture2D texture2D) {
+		return new Sprite(texture2D);
+	}
+	
+	public List<Texture2D> getFrames() {
+		return frames;
+	}
+	
+	public void setCurrentFrame(byte currentFrame) {
+		this.currentFrame = currentFrame;
+	}
+	
+	public byte getCurrentFrame() {
+		this.currentFrame = currentFrame;
+	}
+
+}

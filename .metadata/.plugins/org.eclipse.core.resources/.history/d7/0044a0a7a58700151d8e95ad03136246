@@ -1,0 +1,6 @@
+package Animation;
+
+public abstract class State {
+        private String stateTag;
+        
+}

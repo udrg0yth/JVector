@@ -1,0 +1,64 @@
+package Objects;
+public class Vector2D {
+	private double x;
+	private double y;
+	private double magnitude;
+	private Vector2D normalized = null;
+
+	public static final Vector2D ZERO = new Vector2D(0,0);
+	public static final Vector2D UP = new Vector2D(0,1);
+	public static final Vector2D DOWN = new Vector2D(0,-1);
+	public static final Vector2D LEFT = new Vector2D(-1,0);
+	public static final Vector2D RIGHT = new Vector2D(1,0);
+
+	public static double dotProduct(Vector2D v, Vector2D w) {
+		return v.getX()*w.getX() + v.getY()*w.getY();
+	}
+
+	public static double distance(Vector2D v, Vector2D w) {
+		return Math.sqrt(Math.pow(v.getX()-w.getX(), 2) + Math.pow(v.getY()-w.getY(), 2));
+	}
+	
+	public static Vector2D rotate(Vector2D v, double radians) {
+		double degrees = radians * 180/Math.PI;
+		double sinOf = Math.sin(degrees);
+		double cosOf = Math.cos(degrees);
+		return new Vector2D(cosOf * v.getX() - sinOf * v.getY(), 
+				            sinOf * v.getX() + cosOf * v.getY());
+	}
+
+	public Vector2D(double x, double y) {
+		this.x = x;
+		this.y = y;
+		magnitude = Math.sqrt(Math.pow(x, 2)+Math.pow(y, 2));
+		normalized = new Vector2D(x/magnitude, y/magnitude);
+	}
+
+	public double getX() {
+		return x;
+	}
+
+	public double getY() {
+		return y;
+	}
+
+	public void setX(double x) {
+		this.x = x;
+		magnitude = Math.sqrt(Math.pow(x, 2)+Math.pow(y, 2));
+		normalized = new Vector2D(x/magnitude, y/magnitude);
+	}
+
+	public void setY(double y) {
+		this.y = y;
+		magnitude = Math.sqrt(Math.pow(x, 2)+Math.pow(y, 2));
+		normalized = new Vector2D(x/magnitude, y/magnitude);
+	}
+
+	public double magnitude() {
+		return magnitude;
+	}
+
+	public Vector2D normalized() {
+		return normalized;
+	}
+}

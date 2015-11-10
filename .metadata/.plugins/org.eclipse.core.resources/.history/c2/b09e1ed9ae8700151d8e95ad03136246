@@ -1,0 +1,8 @@
+package Animation;
+
+import java.util.Map;
+
+public class AnimationStateMachine {
+	  private String currentState;
+      private Map<String, AnimationState> stateMachine;
+}

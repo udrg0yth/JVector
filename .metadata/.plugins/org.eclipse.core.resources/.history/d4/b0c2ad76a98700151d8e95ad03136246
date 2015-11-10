@@ -1,0 +1,23 @@
+package Animation;
+
+class A{
+	private int a;
+	public void set(int a) {
+		this.a = a;
+	}
+}
+
+class B {
+	public void inc (A a) {
+		a.set(2);
+	}
+}
+
+public class test {
+    
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

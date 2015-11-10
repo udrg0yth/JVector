@@ -1,2 +1,15 @@
 1446985888141	Rename compilation unit 'Vector2D.java'
 1446989526054	Rename compilation unit 'VectorFactory.java'
+1447158125694	Delete element
+1447158380419	Move compilation unit
+1447158386410	Move compilation unit
+1447158393842	Move compilation unit
+1447158397630	Move compilation unit
+1447158401904	Move compilation unit
+1447158405724	Move compilation unit
+1447158411153	Delete element
+1447159336321	Rename type 'AnimationNotStarted'
+1447159341698	Rename type 'TagAlreadyAssigned'
+1447159513620	Rename field 'listOfTextures'
+1447159964217	Delete element
+1447161787277	Rename type 'StateMachine'

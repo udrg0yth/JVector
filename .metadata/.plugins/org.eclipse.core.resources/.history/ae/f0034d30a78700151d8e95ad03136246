@@ -1,0 +1,28 @@
+package Animation;
+
+import java.util.List;
+
+import javax.swing.Timer;
+
+import Objects.GameObject;
+import Objects.Texture2D;
+
+public class Animation {
+         private String animationTag;
+         private List<Texture2D> frames;
+         private Timer timer;
+         
+         
+         private class ActionListener {
+        	 
+         }
+         
+         public void loadFrames(GameObject gameObject) {
+        	 frames = gameObject.getSprite().getFrames();
+         }
+         
+         public void play() {
+              
+         }
+	     
+}

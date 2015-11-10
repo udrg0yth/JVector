@@ -1,0 +1,15 @@
+package Animation;
+
+import java.util.Map;
+
+public class AnimationStateMachine {
+      private Map<String, AnimationState> stateMachine;
+      
+      AnimationStateMachine() {
+    	  stateMachine = new HashMap<>();
+      }
+      
+      public addState(String state, List<Texture2D> frames) {
+    	  
+      }
+}

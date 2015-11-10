@@ -1,0 +1,27 @@
+package Objects;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+import Animation.AnimationStateMachine;
+
+public class Sprite extends Texture2D{
+    private AnimationStateMachine animationStateMachine;
+	
+	public Sprite() {
+	}
+
+	public List<Texture2D> getFrames() {
+		return frames;
+	}
+	
+	public void setCurrentFrame(byte currentFrame) {
+		this.currentFrame = currentFrame;
+	}
+	
+	public byte getCurrentFrame() {
+		return currentFrame;
+	}
+
+}
